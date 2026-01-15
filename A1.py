@@ -1,7 +1,9 @@
-class robot:
-    def __init__(self,name):
-        self.name = name
-t = robot("Tom")
-j = robot("Jerry")
-print("Robot1's name is", t.name , ".")
-print("Robot2's name is", t.name , ".")
+class rectangle:
+    def __init__(self,w,l):
+        self.length = l
+        self.width = w
+    def rect_a(self):
+        return self.length*self.width 
+drect  = rectangle(45,48)
+print("Dimension of the rectangle is: Length:",drect.length,", Width:",drect.width)
+print("Area of the rectangle is :",drect.rect_a())
