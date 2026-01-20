@@ -1,9 +1,20 @@
-class rectangle:
-    def __init__(self,w,l):
-        self.length = l
-        self.width = w
-    def rect_a(self):
-        return self.length*self.width 
-drect  = rectangle(45,48)
-print("Dimension of the rectangle is: Length:",drect.length,", Width:",drect.width)
-print("Area of the rectangle is :",drect.rect_a())
+a = {}
+print(a)
+b = {1: 'ball',2: 'call'}
+print(b)
+c = {'name': 'Sarthak',1: [2,5,4], 'age':11}
+print(c)
+print(c['name'])
+#update(one key)
+c['age'] = 12
+print("updated: ",c)
+c['country'] = 'Qatar'
+print("added: ",c)
+c.pop('name')
+print("Deleted: ",c)
+
+c.get('age')
+print("accessed: ",c)
+print("New: ",c)
+c.clear()
+print("cleared: ",c)
